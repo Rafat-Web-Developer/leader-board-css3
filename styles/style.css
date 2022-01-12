@@ -16,28 +16,33 @@ body {
 }
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .container {
   width: 870px;
+  margin-top: 21px;
   background-color: #ffff;
+  border-radius: 5px;
 }
 .hr-line {
   width: 807px;
   margin: 30px;
 }
-
-/* -----------------------------------
-    Top player css start
-    ----------------------------------*/
 .top-player-title,
-.top-blog-title {
+.top-blog-title,
+.course-title {
   font-size: 24px;
   font-weight: 500;
   color: #562eff;
   margin-left: 30px;
   margin-top: 33px;
 }
+
+/* -----------------------------------
+    Top player css start
+    ----------------------------------*/
+
 .players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -89,4 +94,53 @@ main {
 }
 .blog-author a {
   text-decoration: none;
+}
+
+/* -----------------------------------
+    Lates course css start
+    ----------------------------------*/
+#all-courses {
+  margin-bottom: 28px;
+}
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 23px;
+  margin: 30px;
+}
+.course img {
+  width: 224px;
+  height: 104px;
+}
+.course-details {
+  margin-top: 15px;
+}
+.course-info {
+  display: flex;
+  justify-content: space-between;
+}
+.course-name {
+  color: #1e1e1e;
+  font-weight: 500;
+  font-size: 20px;
+}
+.fa-star {
+  color: #ffc014;
+}
+.rating {
+  color: #a2a2a2;
+}
+.course-duration {
+  display: flex;
+  align-items: center;
+  background-color: #ffe4e8;
+  color: #ff4a60;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px;
+}
+.course-duration p {
+  margin-left: 5px;
+  font-size: 14px;
 }
