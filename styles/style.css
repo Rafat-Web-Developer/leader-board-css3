@@ -40,6 +40,53 @@ main {
 }
 
 /* -----------------------------------
+    Header css start
+    ----------------------------------*/
+
+header {
+  background-color: #562eff;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0px;
+}
+nav {
+  width: 870px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  color: #ffff;
+}
+.fa-registered {
+  font-size: 40px;
+}
+.brand-title {
+  font-weight: 500;
+  margin-left: 15px;
+  letter-spacing: 1px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar > li {
+  list-style-type: none;
+  margin-left: 30px;
+}
+.navbar > li > a {
+  text-decoration: none;
+  color: #ffff;
+  font-weight: 100;
+}
+.navbar > li > a > img {
+  width: 50px;
+  height: 50px;
+}
+
+/* -----------------------------------
     Top player css start
     ----------------------------------*/
 
