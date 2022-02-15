@@ -10,3 +10,9 @@ function enrollPowerpoint(){
     const newNumber = currentNumber + 1;
     powerpointField.innerText = newNumber;
 }
+function enrollJavascript(){
+    const javascriptField = document.getElementById('javascript');
+    let currentNumber = parseInt(javascriptField.innerText);
+    const newNumber = currentNumber + 1;
+    javascriptField.innerText = newNumber;
+}
