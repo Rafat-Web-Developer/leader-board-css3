@@ -1,18 +1,24 @@
+function getElementValue(elementId){
+    const element = document.getElementById(elementId);
+    const value = parseInt(element.innerText);
+    return value;
+}
+function setValueInElement(elementId, value){
+    const element = document.getElementById(elementId);
+    element.innerText = value;
+}
 function enrollReact(){
-    const reactField = document.getElementById('react');
-    let currentNumber = parseInt(reactField.innerText);
+    let currentNumber = getElementValue('react');
     const newNumber = currentNumber + 1;
-    reactField.innerText = newNumber;
+    setValueInElement('react', newNumber);
 }
 function enrollPowerpoint(){
-    const powerpointField = document.getElementById('powerpoint');
-    let currentNumber = parseInt(powerpointField.innerText);
+    let currentNumber = getElementValue('powerpoint');
     const newNumber = currentNumber + 1;
-    powerpointField.innerText = newNumber;
+    setValueInElement('powerpoint', newNumber);
 }
 function enrollJavascript(){
-    const javascriptField = document.getElementById('javascript');
-    let currentNumber = parseInt(javascriptField.innerText);
+    let currentNumber = getElementValue('javascript');
     const newNumber = currentNumber + 1;
-    javascriptField.innerText = newNumber;
+    setValueInElement('javascript', newNumber);
 }
